@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
+  
+}
+
+#root {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url(images/mika-ruusunen-O_ZODWzV__8-unsplash.jpg)#030728 no-repeat center ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.currency_converter_container {
+  margin: 0 auto;
+  background-color: rgba(161, 168, 214, 0.062);
+  padding: 40px 30px 50px;
+  border-radius: 8px;
+  backdrop-filter: blur(30px);
+  max-width: 410px;
+  border:1px solid rgba(255 , 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.currency_converter_container .converter_title {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.currency_converter_container .converter_form {
+  margin-top: 45px;
+}
+.currency_converter_container .form_group {
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+.currency_converter_container .form_group .form_label {
+  color: #fff;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 9px;
+  font-size: 1rem;
+
+}
+.currency_converter_container .form_group .form_input {
+  outline: none;
+  font-size: 1.1rem;
+  padding: 0 15px ;
+  color: #000;
+  font-weight: 500;
+  min-height: 48px;
+  border-radius: 6px;
+  border:1px solid rgba(255 , 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(255 , 255, 255, 0.5);
+}
+.currency_converter_container .form_currency_group {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.currency_converter_container .courrency_select {
+   display: flex;
+   align-items: center;
+   padding: 0 10px;
+   min-height: 45px;
+   border-radius: 6px;
+   border:1px solid rgba(255 , 255, 255, 0.1);
+   box-shadow: 0 8px 32px rgba(255 , 255, 255, 0.5);
+} 
+
+.currency_converter_container .courrency_select img {
+  width: 25px;
+}
+.currency_converter_container .courrency_select .courrency_dropdown {
+  outline: none;
+  border: none;
+  background: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 0px 10px 0px 5px;
+}
+.currency_converter_container .courrency_select .courrency_dropdown option{
+  color: #000;
+  font-weight: 500;
+}
+.currency_converter_container .swap_icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 25px;
+  border-radius: 50%;
+  background: rgba(255 , 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(255 , 255, 255, 0.5);
+  transition: 0.3s ease;
+}
+.currency_converter_container .swap_icon:hover {
+  background: rgba(255 , 255, 255, 0.3);
+
+}
+.currency_converter_container .submit_button {
+  width: 100%;
+  min-height: 52px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+}
+.currency_converter_container .submit_button:hover {
+  background: rgba(255 , 255, 255, 0.8);
+
+}
+.currency_converter_container .exchange_rate_result {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 22px 0;
+  margin-top: 30px;
+  border-radius: 6px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  background: rgba(255 , 255, 255, 0.15);
+
+}
